@@ -12,8 +12,7 @@ export default function App() {
   return (
   <Provider store={store}>
     <View style={styles.container}>
-      <Text style={{fontSize:40,fontWeight:500,color:'red',textDecorationLine:'underline'
-                    }}
+      <Text style={styles.heading}
       >
         Todo App
       </Text>
@@ -35,4 +34,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
    // justifyContent: 'center',
   },
+  heading:{
+    fontSize:40,
+    fontWeight:500,
+    color:'red',
+    textDecorationLine:'underline'
+  }
 });
